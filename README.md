@@ -24,20 +24,20 @@ python3 -m venv .venv
 ## Использование
 
 ```bash
-# Вакансия текстом (резюме по умолчанию)
-.venv/bin/python hr_match.py --vacancy "Senior DevOps Engineer, remote..."
+# Вакансия текстом
+.venv/bin/python hr_match.py resume.pdf --vacancy "Senior DevOps Engineer, remote..."
 
 # Вакансия из PDF
-.venv/bin/python hr_match.py --vacancy job.pdf
+.venv/bin/python hr_match.py resume.pdf --vacancy job.pdf
 
 # Своё резюме + вакансия
 .venv/bin/python hr_match.py resume.pdf --vacancy job.pdf
 
 # Вакансия по URL
-.venv/bin/python hr_match.py --vacancy https://example.com/job.pdf
+.venv/bin/python hr_match.py resume.pdf --vacancy https://example.com/job.pdf
 
 # Сохранить отчёт
-.venv/bin/python hr_match.py --vacancy job.pdf --out report.txt
+.venv/bin/python hr_match.py resume.pdf --vacancy job.pdf --out report.txt
 ```
 
 Без аргументов покажет подробную справку:
